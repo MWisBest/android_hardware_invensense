@@ -42,6 +42,7 @@ LOCAL_SHARED_LIBRARIES := liblog libcutils libutils libdl libmllite libmlplatfor
 LOCAL_CPPFLAGS+=-DLINUX=1
 LOCAL_LDFLAGS:=-rdynamic
 LOCAL_PRELINK_MODULE := false
+LOCAL_CLANG := true
 
 include $(BUILD_SHARED_LIBRARY)
 

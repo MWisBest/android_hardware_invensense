@@ -26,6 +26,7 @@ LOCAL_SRC_FILES := $(ML_SOURCES)
 
 LOCAL_SHARED_LIBRARIES := liblog libm libutils libcutils
 LOCAL_PRELINK_MODULE := false
+LOCAL_CLANG := true
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -87,6 +88,7 @@ endif
 LOCAL_SRC_FILES := $(ML_SOURCES)
 LOCAL_SHARED_LIBRARIES := libm libutils libcutils liblog libmlplatform
 LOCAL_PRELINK_MODULE := false
+LOCAL_CLANG := true
 include $(BUILD_SHARED_LIBRARY)
 
 #This makes an .so from our .a
